@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wordlist Signup</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="max-width:520px;margin:40px auto;">
+      <h1>Create account</h1>
+
+      <div class="input" style="margin-top:12px;">
+        <span class="muted">Email</span>
+        <input id="email" type="email" autocomplete="email" />
+      </div>
+
+      <div class="input" style="margin-top:12px;">
+        <span class="muted">Password</span>
+        <input id="password" type="password" autocomplete="new-password" />
+      </div>
+
+      <button id="signupBtn" class="btn-primary" style="margin-top:14px;" type="button">
+        Sign up
+      </button>
+
+      <div id="msg" class="muted" style="margin-top:12px;"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wordlist – Teacher</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Wordlist</h1>
+      <p id="authStatus">Checking login…</p>
+
+      <a id="loginLink" class="btn-soft hidden" href="./login.html">Login</a>
+      <button id="logoutBtn" class="btn-soft">Logout</button>
+
+      <hr>
+
+      <input id="phonemeInput" value="ch sh" />
+      <button id="generateBtn">Generate</button>
+
+      <ul id="wordList"></ul>
+
+      <h3>Class roster</h3>
+      <div id="roster"></div>
+      <p>Selected: <span id="selectedStudent">None</span></p>
+
+      <button id="saveBtn">Save</button>
+      <button id="assignBtn">Assign</button>
+    </div>
+  </div>
+
+  <!-- 1) Supabase SDK (global `supabase`) -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+  <!-- 2) Your client (sets window.supabaseClient) -->
+  <script src="./supabaseClient.js"></script>
+
+  <!-- 3) Teacher logic (uses window.supabaseClient) -->
+  <script src="./teacher.js?v=1" defer></script>
+</body>
+</html>

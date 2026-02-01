@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wordlist — Login</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="max-width:520px;margin:48px auto;">
+      <h2>Login</h2>
+
+      <div class="input" style="margin-top:12px;">
+        <span class="muted">Email</span>
+        <input id="email" type="email" autocomplete="email" />
+      </div>
+
+      <div class="input" style="margin-top:12px;">
+        <span class="muted">Password</span>
+        <input id="password" type="password" autocomplete="current-password" />
+      </div>
+
+      <button id="loginBtn" class="btn-primary" style="margin-top:14px;" type="button">Login</button>
+      <div id="status" class="muted" style="margin-top:12px;"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./login.js?v=1"></script>
+</body>
+</html>

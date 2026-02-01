@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wordlist – Teacher</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Wordlist</h1>
+      <p id="authStatus">Checking login…</p>
+
+      <a id="loginLink" class="btn-soft hidden" href="./login.html">Login</a>
+      <button id="logoutBtn" class="btn-soft">Logout</button>
+
+      <hr>
+
+      <input id="phonemeInput" value="ch sh" />
+      <button id="generateBtn">Generate</button>
+
+      <ul id="wordList"></ul>
+
+      <h3>Class roster</h3>
+      <div id="roster"></div>
+      <p>Selected: <span id="selectedStudent">None</span></p>
+
+      <button id="saveBtn">Save</button>
+      <button id="assignBtn">Assign</button>
+    </div>
+  </div>
+
+  <script type="module" src="./teacher.js?v=1"></script>
+</body>
+</html>
