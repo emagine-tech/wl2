@@ -1,31 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wordlist — Login</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="utf-8">
+  <title>Wordlist – Login</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="container">
-    <div class="card" style="max-width:520px;margin:48px auto;">
-      <h2>Login</h2>
+    <div class="card">
+      <h1>Wordlist</h1>
 
-      <div class="input" style="margin-top:12px;">
-        <span class="muted">Email</span>
-        <input id="email" type="email" autocomplete="email" />
-      </div>
+      <p id="status">Sign in or create an account</p>
 
-      <div class="input" style="margin-top:12px;">
-        <span class="muted">Password</span>
-        <input id="password" type="password" autocomplete="current-password" />
-      </div>
+      <input id="email" type="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
 
-      <button id="loginBtn" class="btn-primary" style="margin-top:14px;" type="button">Login</button>
-      <div id="status" class="muted" style="margin-top:12px;"></div>
+      <button id="loginBtn" class="btn-soft">Login</button>
+      <button id="signupBtn" class="btn-soft">Sign up</button>
+
+      <p>
+        <a href="./teacher.html">Back to Teacher</a>
+      </p>
     </div>
   </div>
 
-  <script type="module" src="./login.js?v=1"></script>
+  <!-- 1️⃣ Supabase SDK (defines global `supabase`) -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+  <!-- 2️⃣ Your client (defines global `window.supabaseClient`) -->
+  <script src="./supabaseClient.js?v=4"></script>
+
+  <!-- 3️⃣ Login logic (USES global supabaseClient, NO imports) -->
+  <script src="./login.js?v=4" defer></script>
 </body>
 </html>
